@@ -1,0 +1,233 @@
+.app-shell {
+  min-height: 100vh;
+  padding: 32px 20px 48px;
+  background:
+    radial-gradient(circle at top, rgba(124, 178, 238, 0.2), transparent 32%),
+    linear-gradient(180deg, #eef4fb 0%, #dce8f7 100%);
+}
+
+.app-panel {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 28px;
+  border: 1px solid #bfd3eb;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 24px 80px rgba(38, 77, 123, 0.14);
+  backdrop-filter: blur(10px);
+}
+
+.app-toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #4f79ad;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  max-width: 620px;
+  margin: 10px 0 0;
+  color: #4f6077;
+}
+
+.banner {
+  margin: 0 0 18px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: #edf4fc;
+  color: #406184;
+}
+
+.banner.warning {
+  background: #fff6e6;
+  color: #8b5a10;
+}
+
+.tree-list {
+  display: grid;
+  gap: 22px;
+}
+
+.tree-card {
+  padding: 18px;
+  border: 1px solid #b8d0e8;
+  border-radius: 20px;
+  background: #f9fcff;
+}
+
+.tree-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.tree-card-header h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.tree-card-header p {
+  margin: 6px 0 0;
+  color: #57708e;
+}
+
+.tree-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 58px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #e4eef9;
+  color: #315175;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.tree-actions {
+  margin-top: 16px;
+}
+
+.tag-block {
+  margin-top: 8px;
+  border: 2px solid #59a5e8;
+  background: #f2f3f5;
+}
+
+.tag-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  background: linear-gradient(180deg, #77b0eb 0%, #5d9cde 100%);
+}
+
+.toggle-button,
+.add-child-button,
+.secondary-button,
+.primary-button {
+  border: 1px solid #b8b2a7;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #f5f3ef 0%, #ddd7cd 100%);
+  color: #2f3f54;
+  font: inherit;
+  cursor: pointer;
+}
+
+.toggle-button {
+  width: 56px;
+  height: 30px;
+}
+
+.name-button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #0b1724;
+  font: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.name-input,
+.data-input {
+  min-height: 32px;
+  border: 1px solid #b9b9b9;
+  border-radius: 3px;
+  padding: 0 10px;
+  font: inherit;
+  color: #1e2937;
+  background: #ffffff;
+}
+
+.name-input {
+  width: min(280px, 100%);
+}
+
+.add-child-button,
+.secondary-button,
+.primary-button {
+  margin-left: auto;
+  min-width: 112px;
+  padding: 8px 14px;
+}
+
+.primary-button {
+  margin-left: 0;
+  min-height: 40px;
+}
+
+.tag-body {
+  padding: 6px 0 2px;
+}
+
+.data-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 16px 10px 16px;
+  color: #3b4d63;
+}
+
+.data-input {
+  width: min(240px, 100%);
+}
+
+.export-output {
+  overflow-x: auto;
+  margin: 16px 0 0;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid #cad8e8;
+  background: #ffffff;
+  color: #213247;
+  text-align: left;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+@media (max-width: 768px) {
+  .app-shell {
+    padding-inline: 12px;
+  }
+
+  .app-panel {
+    padding: 18px;
+  }
+
+  .app-toolbar,
+  .tree-card-header,
+  .tag-header,
+  .data-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .add-child-button,
+  .secondary-button,
+  .primary-button {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .toggle-button {
+    width: 100%;
+  }
+
+  .name-input,
+  .data-input {
+    width: 100%;
+  }
+}
